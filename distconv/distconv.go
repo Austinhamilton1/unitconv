@@ -146,5 +146,5 @@ func (m Mile) ToDecimeter() Decimeter {return Decimeter(m.ToInch().ToCentimeter(
 func (m Mile) ToMeter() Meter {return Meter(m.ToInch().ToCentimeter().ToMeter())}
 func (m Mile) ToKilometer() Kilometer {return Kilometer(m.ToInch().ToCentimeter().ToKilometer())}
 func (m Mile) ToInch() Inch {return Inch(m.ToFoot().ToInch())}
-func (m Mile) ToFoot() Foot {return Foot(m/5280)}
-func (m Mile) ToYard() Yard {return Yard(m/1760)}
+func (m Mile) ToFoot() Foot {return Foot(m*5280)}
+func (m Mile) ToYard() Yard {return Yard(m*s1760)}
