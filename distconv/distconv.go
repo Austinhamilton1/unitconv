@@ -128,7 +128,7 @@ func (f Foot) ToYard() Yard {return Yard(f/3)}
 func (f Foot) ToMile() Mile {return Mile(f/5280)}
 
 func (y Yard) ToNanometer() Nanometer {return Nanometer(y.ToInch().ToCentimeter().ToNanometer())}
-func (y Yard) ToMicrometer()  Micrometer {return Micrometer(y.ToInch().ToCentimeter().ToMicrometer())}
+func (y Yard) ToMicrometer() Micrometer {return Micrometer(y.ToInch().ToCentimeter().ToMicrometer())}
 func (y Yard) ToMillimeter() Millimeter {return Millimeter(y.ToInch().ToCentimeter().ToMillimeter())}
 func (y Yard) ToCentimeter() Centimeter {return Centimeter(y.ToInch().ToCentimeter())}
 func (y Yard) ToDecimeter() Decimeter {return Decimeter(y.ToInch().ToCentimeter().ToDecimeter())}
